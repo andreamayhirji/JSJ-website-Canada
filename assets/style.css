@@ -54,8 +54,8 @@ h6 {
   display: grid;
   justify-content: center;
   align-items: center;
-  border-radius: 3px;
+  /* border-radius: 3px; */
   font-size: 35px;
-  border: 2px solid var(--primary);
+  /* border: 2px solid var(--primary); */
 
 }
