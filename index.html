@@ -4,21 +4,97 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://use.typekit.net/zws7phs.css" rel="stylesheet">
   <link rel="stylesheet" href="../assets/style.css">
-  <title>Starter Files and Tooling Setup!</title>
+  <title>JSJ Canada</title>
 </head>
 
-<style>
-  p {
-    font-size: 50px;
-    border-bottom: 10px solid var(--yellow);
-    color: var(--black);
-  }
-</style>
-
 <body>
-  <p>Hello!</p>
-  .container>.item*10
+  <div class="container">
+    <div class="itm itm1">
+      <!-- <p>JSJ Logo</p> -->
+      <img class="logo" src="assets/images/JSJ Canada Logo@2x.png" alt="JSJ Canada">
+    </div>
+    <div class="itm itm2">
+      <h2>Our Investment Philosophy</h2>
+    </div>
+    <div class="itm itm3">
+      <p>JSJ Canada is a family office on the forefront of the venture capital industry. Our company
+        invests in small- to mid-cap companies who are on the precipice of major growth and need
+        strategic investment to achieve it. We have been investing in promising Canadian startups for
+        the last 20 years, alongside assets spread across Europe, Australia, and North America. </p>
+      <p>We provide fast access to funds — whether that’s in the form of seed money, bridge financing,
+        or simply an injection of capital — from an established organization that is actively seeking
+        innovative partners. The companies we invest in present strong action plans with clearly
+        identified targets. They are led by strong management groups with sector expertise and a track
+        record of successes.</p>
+      <p>We invest in public and imminently pre-public companies. Our portfolio includes private
+        placements, secondary offerings, and IPOs, as well as alternative funding structures.</p>
+    </div>
+    <div class="itm itm4">4</div>
+    <!-- <div class="itm itm5">5</div>
+    <div class="itm itm6">6</div>
+    <div class="itm itm7">7</div>
+    <div class="itm itm8">8</div>
+    <div class="itm itm9">9</div>
+    <div class="itm itm10">10</div>
+    <div class="itm itm11">11</div>
+    <div class="itm itm12">12</div> -->
+  </div>
+
+  <style>
+    p {
+      font-size: 50px;
+      border-bottom: 10px solid var(--yellow);
+      color: var(--white);
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: repeat(10, 1fr);
+      /* grid-template-rows: repeat(10, 1fr); */
+      margin: 200px 100px;
+    }
+
+    .itm1 {
+      grid-column: 1 / 7;
+      grid-row: 1 / span 1;
+    }
+
+    .itm2 {
+      margin-top: 200px;
+      grid-column: 1 / 7;
+      grid-row: 3 / span 1;
+    }
+
+    .itm3 {
+      grid-column: 5 / -1;
+      grid-row: 4 / span 1;
+    }
+
+    .logo {
+      width: 50%;
+    }
+
+    h2 {
+      color: var(--primary);
+      font-family: utopia-std-caption, serif;
+      font-weight: 700;
+      font-style: italic;
+      font-size: 2.5em;
+      line-height: 1.4;
+    }
+
+    p {
+      color: var(--white);
+      font-family: commuters-sans, sans-serif;
+      font-weight: 300;
+      font-style: normal;
+      font-size: .65em;
+      line-height: 1.7;
+    }
+  </style>
 </body>
 
 </html>
