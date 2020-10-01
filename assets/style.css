@@ -27,7 +27,14 @@ html {
 
 body {
   background-color: var(--black);
-  background-image: linear-gradient(rgba(5, 8, 8, 0.8), rgba(5, 8, 8, 0));
+  background-image: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.7) 0%,
+    rgba(27, 35, 36, 0) 15%,
+    rgba(27, 35, 36, 0) 50%,
+    rgba(14, 18, 18, 0) 85%,
+    rgba(0, 0, 0, 0.7) 100%
+  );
   height: 100%;
   background-repeat: no-repeat;
   font-size: 30px;
@@ -79,12 +86,26 @@ h4 {
   line-height: 1.5;
 }
 
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:visited {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover {
+  color: rgba(255, 255, 255, 0.35);
+  cursor: alias;
+}
+
 main {
   display: flex;
   flex-direction: column;
   margin-top: 50px;
-  /* margin-bottom: 50px; */
-  background-image: url('./images/pattern2.png');
+  background-image: url('./images/pattern1.png');
   background-repeat: no-repeat;
   background-position: top right;
 }
@@ -96,7 +117,6 @@ main {
 }
 
 .logo {
-  /* width: 40%; */
   width: 500px;
 }
 
@@ -113,14 +133,13 @@ main {
 }
 
 .section-1-content {
-  /* width: 50%; */
   margin-left: 500px;
   padding-right: 150px;
 }
 
 /* infograph content section 2 */
 .section-2 {
-  background: linear-gradient(to left, #0d0d0d 85%, #ffffff00 50%);
+  background: linear-gradient(to left, #0d0d0d4d 85%, #ffffff00 50%);
   padding-bottom: 100px;
   margin: 100px 0;
   padding-left: 150px;
@@ -185,10 +204,9 @@ main {
   width: 100%;
   margin-top: 200px;
   padding-left: 50px;
-}
-
-.background-img {
-  width: 500px;
+  background-image: url('./images/pattern2.png');
+  background-repeat: no-repeat;
+  background-position: top right;
 }
 
 .section-4-content {
@@ -199,10 +217,27 @@ main {
   padding-top: 300px;
 }
 
-.section-4-img {
-  display: flex;
-  flex-direction: column;
-  flex-basis: 100%;
-  flex: 1;
-  justify-content: flex-end;
+.span {
+  color: var(--white);
+  font-family: commuters-sans, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 0.5em;
+  line-height: 1.7;
+  padding-left: 40px;
+  letter-spacing: 3px;
+}
+
+@media (max-width: 1420px) {
+  .section-1 {
+  }
+
+  .section-1-title {
+    width: 80%;
+  }
+
+  .section-1-content {
+    margin-left: 300px;
+    padding-right: 150px;
+  }
 }
