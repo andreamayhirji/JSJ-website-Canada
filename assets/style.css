@@ -224,6 +224,7 @@ main {
   flex: 1;
   padding-top: 300px;
   padding-left: 50px;
+  padding-right: 50px;
 }
 
 .span {
@@ -293,6 +294,10 @@ main {
     width: 400px;
   }
 
+  .section-2 {
+    padding-bottom: 50px;
+  }
+
   .section-3-title {
     width: 100%;
     padding-left: 100px;
@@ -349,12 +354,60 @@ main {
 
   .section-3-title {
     width: 100%;
-    margin-top: 150px;
     padding-left: 100px;
   }
 
   .section-3-content {
     padding-left: 100px;
     padding-right: 100px;
+  }
+  .span {
+    padding-left: 0px;
+  }
+}
+
+@media (max-width: 600px) {
+  .header {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  .logo {
+    width: 100%;
+  }
+
+  h2 {
+    font-size: 2em;
+  }
+
+  h4 {
+    font-size: 1.3em;
+  }
+
+  .span {
+    font-size: 0.5em;
+  }
+  .section-2 {
+    margin-bottom: 75px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  .section-1-title {
+    padding-left: 50px;
+  }
+
+  .section-1-content {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  .section-3-title {
+    padding-left: 50px;
+  }
+  .section-3-content {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .section-4 {
+    margin-top: 100px;
   }
 }
